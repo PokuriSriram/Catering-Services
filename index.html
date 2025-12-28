@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nawabi Kitchens | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --emerald: #023020; --rose-gold: #D4AF37; --soft-ivory: #FCF9F2; }
+        body { background-color: var(--soft-ivory); color: var(--emerald); font-family: 'Georgia', serif; }
+        .navbar { background: var(--emerald) !important; border-bottom: 2px solid var(--rose-gold); }
+        .nav-link { color: var(--rose-gold) !important; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Elegant Arch Shape & High-Contrast Hover */
+        .dish-card { 
+            position: relative; 
+            overflow: hidden; 
+            border-radius: 120px 120px 0 0; /* Premium Arch Shape */
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: 0.4s ease-in-out;
+            background: #fff;
+        }
+        .dish-card img { 
+            width: 100%; height: 280px; object-fit: cover; 
+            transition: 0.5s ease; 
+        }
+        .dish-card:hover img { transform: scale(1.1); filter: brightness(70%); }
+
+        /* High Visibility Text Overlay */
+        .dish-info {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            background: var(--emerald);
+            color: var(--rose-gold);
+            padding: 15px;
+            text-align: center;
+            transform: translateY(100%);
+            transition: 0.3s ease;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border-top: 2px solid var(--rose-gold);
+        }
+        .dish-card:hover .dish-info { transform: translateY(0); }
+
+        .hero-banner {
+            background: linear-gradient(rgba(2, 48, 32, 0.7), rgba(2, 48, 32, 0.7)), 
+                        url('https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=1260');
+            background-size: cover; padding: 100px 0; color: var(--rose-gold);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Nawabi Kitchens</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-banner text-center">
+        <div class="container py-5">
+            <h1 class="display-1 fw-bold">Royal Indian Feast</h1>
+            <p class="fs-4 mb-5">Bespoke heritage catering for elite celebrations.</p>
+            <a href="contact.html" class="btn btn-lg px-5 py-3" style="background: var(--rose-gold); color: var(--emerald); border-radius: 0; font-weight: bold;">INQUIRE NOW</a>
+        </div>
+    </header>
+
+    <section class="container py-5">
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="dish-card shadow">
+                    <img src="images/1.jpg" alt="Biryani">
+                    <div class="dish-info">Nizami Dum Biryani</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="dish-card shadow">
+                    <img src="images/2.jpg" alt="Butter Chicken">
+                    <div class="dish-info">Murgh Makhani</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="dish-card shadow">
+                    <img src="images/3.jpg" alt="Kebabs">
+                    <div class="dish-info">Seekh Kebab Platter</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="dish-card shadow">
+                    <img src="images/4.jpg" alt="Dessert">
+                    <div class="dish-info">Saffron Gulab Jamun</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="dish-card shadow">
+                    <img src="images/8.jpg" alt="Paneer">
+                    <div class="dish-info">Paneer Tikka </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="dish-card shadow">
+                    <img src="images/5.jpg" alt="Naan">
+                    <div class="dish-info">Butter Garlic Naan</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="dish-card shadow">
+                    <img src="images/6.jpg" alt="Chaat">
+                    <div class="dish-info">Samosa Chaat</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="dish-card shadow">
+                    <img src="images/7.jpg" alt="Dal">
+                    <div class="dish-info">Classic Dal Makhani</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 text-center mt-5" style="background: var(--emerald); color: var(--rose-gold);">
+        <p class="small text-uppercase mb-0">Nawabi Kitchens © 2025</p>
+    </footer>
+</body>
+</html>
