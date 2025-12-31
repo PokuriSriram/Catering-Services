@@ -1,0 +1,16 @@
+{
+  "name": "catering-services",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "nunjucks": "^3.2.4",
+    "vite": "^5.0.0",
+    "vite-plugin-nunjucks": "*"
+  }
+}

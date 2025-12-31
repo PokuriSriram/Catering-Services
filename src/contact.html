@@ -1,0 +1,49 @@
+{% extends "src/templates/layout.njk" %}
+
+{% block title %}Contact | Emerald Awadh{% endblock %}
+{% block brand %}EMERALD AWADH{% endblock %}
+
+{% block styles %}
+<style>
+    .form-box {
+        background: white;
+        border-radius: 40px 0;
+        border-right: 12px solid var(--emerald);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container py-5 mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10 form-box p-0 overflow-hidden">
+            <div class="row g-0">
+                <div class="col-md-5 p-5 text-white d-flex flex-column justify-content-center"
+                    style="background: var(--emerald);">
+                    <h2 class="fw-bold">Contact Us</h2>
+                    <p class="opacity-75 mt-4">Let our concierge team design your royal feast.</p>
+                </div>
+                <div class="col-md-7 p-5">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6"><input type="text" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="col-12"><textarea class="form-control" rows="4"
+                                    placeholder="Your Preference"></textarea></div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-dark w-100 py-3"
+                                    style="background: var(--emerald); border-radius: 0;">SEND INQUIRY</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}{% endblock %} <!-- Original contact.html had no footer -->
