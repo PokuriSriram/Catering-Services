@@ -6,7 +6,7 @@ This project is a modern refactoring of a static HTML website. It transitions fr
 The primary objective is to implement "Separation of Concerns"—keeping the website structure separate from the content—to make the code scalable and maintainable.
 
 ---
-
+ ##Live Link :  https://nawabcaters.netlify.app/
 ## 🛠️ Mandatory Technology Stack
 
 ### 1. Templating Engine: **Nunjucks**
@@ -76,5 +76,6 @@ my-internship-task/
 │   └── page3.njk          # Contact content
 ├── package.json           # Project configuration
 └── vite.config.js         # Settings to prevent broken links
+
 
 
